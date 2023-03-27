@@ -351,9 +351,15 @@
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vq2nn"]
 texture = ExtResource("1_ptd12")
+texture_region_size = Vector2i(256, 352)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 40)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qodbw"]
 texture = ExtResource("2_wsyoi")
+texture_region_size = Vector2i(256, 352)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 40)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1vdka"]
 texture = ExtResource("3_q2axd")
@@ -687,6 +693,9 @@ texture = ExtResource("112_t74i4")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bhxu2"]
 texture = ExtResource("113_kq4st")
+texture_region_size = Vector2i(256, 352)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 40)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ow4nu"]
 texture = ExtResource("114_kjek8")
@@ -771,6 +780,9 @@ texture = ExtResource("140_iwoww")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nqdu2"]
 texture = ExtResource("141_fkvn5")
+texture_region_size = Vector2i(256, 352)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 120)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a4att"]
 texture = ExtResource("142_is38s")
@@ -1020,6 +1032,9 @@ texture = ExtResource("223_g367h")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_es146"]
 texture = ExtResource("224_8cxdw")
+texture_region_size = Vector2i(256, 352)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 40)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bx238"]
 texture = ExtResource("225_ew7j6")
@@ -1197,6 +1212,9 @@ texture = ExtResource("282_1nelb")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q3g5f"]
 texture = ExtResource("283_56nhb")
+texture_region_size = Vector2i(256, 352)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 110)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3xr73"]
 texture = ExtResource("284_4eqfx")
@@ -1394,6 +1412,10 @@ texture = ExtResource("347_qbh04")
 texture = ExtResource("348_q3545")
 
 [resource]
+tile_shape = 1
+tile_layout = 1
+tile_offset_axis = 1
+tile_size = Vector2i(220, 100)
 sources/0 = SubResource("TileSetAtlasSource_vq2nn")
 sources/1 = SubResource("TileSetAtlasSource_qodbw")
 sources/2 = SubResource("TileSetAtlasSource_bhxu2")
