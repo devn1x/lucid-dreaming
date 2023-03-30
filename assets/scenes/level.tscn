@@ -1,7 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://ykdensdv3oan"]
+[gd_scene load_steps=3 format=3 uid="uid://ykdensdv3oan"]
 
 [ext_resource type="PackedScene" uid="uid://cunx7jy5bvdoo" path="res://assets/scenes/tilemaps/map.tscn" id="1_nkjvl"]
+[ext_resource type="Script" path="res://assets/scripts/camera/main.gd" id="2_seclb"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Map" parent="." instance=ExtResource("1_nkjvl")]
+
+[node name="Camera" type="Camera2D" parent="."]
+script = ExtResource("2_seclb")
