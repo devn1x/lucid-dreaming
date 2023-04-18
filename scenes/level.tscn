@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bbwt55mc2hosy"]
 
-[ext_resource type="PackedScene" uid="uid://cunx7jy5bvdoo" path="res://assets/scenes/tilemaps/map.tscn" id="1_nkjvl"]
-[ext_resource type="PackedScene" uid="uid://crvt284eeq7p0" path="res://assets/scenes/interface/level_gui.tscn" id="2_2ft0l"]
-[ext_resource type="Script" path="res://assets/scripts/camera/main.gd" id="2_seclb"]
+[ext_resource type="PackedScene" uid="uid://cunx7jy5bvdoo" path="res://scenes/tilemaps/map.tscn" id="1_nkjvl"]
+[ext_resource type="PackedScene" uid="uid://crvt284eeq7p0" path="res://scenes/interface/level_gui.tscn" id="2_2ft0l"]
+[ext_resource type="Script" path="res://scripts/camera/main.gd" id="2_fnxki"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,6 +10,6 @@
 
 [node name="Camera" type="Camera2D" parent="."]
 anchor_mode = 0
-script = ExtResource("2_seclb")
+script = ExtResource("2_fnxki")
 
 [node name="LevelGUI" parent="Camera" instance=ExtResource("2_2ft0l")]
