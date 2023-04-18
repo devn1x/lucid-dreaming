@@ -40,13 +40,13 @@ func handle_movement_mouse(event: InputEvent):
 
 func process_movement_keyboard(delta: float):
 	if Input.is_action_pressed("camera_left"):
-		global_position += Vector2.LEFT * delta * keyboard_move_speed
+		global_position += Vector2.LEFT * delta * keyboard_move_speed / zoom.x
 	if Input.is_action_pressed("camera_right"):
-		global_position += Vector2.RIGHT * delta * keyboard_move_speed
+		global_position += Vector2.RIGHT * delta * keyboard_move_speed / zoom.x
 	if Input.is_action_pressed("camera_up"):
-		global_position += Vector2.UP * delta * keyboard_move_speed
+		global_position += Vector2.UP * delta * keyboard_move_speed / zoom.x
 	if Input.is_action_pressed("camera_down"):
-		global_position += Vector2.DOWN * delta * keyboard_move_speed
+		global_position += Vector2.DOWN * delta * keyboard_move_speed / zoom.x
 
 func zoom_in(_zoom_pos: Vector2):
 	self.zoom = Vector2(self.zoom.x * (1 + zoom_step_size), self.zoom.y * (1 + zoom_step_size))
