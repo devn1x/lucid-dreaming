@@ -48,8 +48,8 @@ func process_movement_keyboard(delta: float):
 	if Input.is_action_pressed("camera_down"):
 		global_position += Vector2.DOWN * delta * keyboard_move_speed
 
-func zoom_in(zoom_pos: Vector2):
+func zoom_in(_zoom_pos: Vector2):
 	self.zoom = Vector2(self.zoom.x * (1 + zoom_step_size), self.zoom.y * (1 + zoom_step_size))
 
-func zoom_out(zoom_pos: Vector2):
+func zoom_out(_zoom_pos: Vector2):
 	self.zoom = Vector2(self.zoom.x * (1 - zoom_step_size), self.zoom.y * (1 - zoom_step_size))
