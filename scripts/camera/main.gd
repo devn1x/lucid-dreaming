@@ -4,7 +4,7 @@ extends Camera2D
 ## Size of a single zoom step
 @export var zoom_step_size: float = 0.1
 ## Camera speed in pixels per second
-@export var keyboard_move_speed: float = 100
+@export var keyboard_move_speed: float = 400
 
 # Variables for calculating camera movement via mouse
 var is_dragging: bool = false
