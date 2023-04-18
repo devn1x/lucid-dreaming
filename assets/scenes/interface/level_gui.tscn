@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://crvt284eeq7p0"]
 
 [node name="LevelGUI" type="Control"]
-z_index = 999
+top_level = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
