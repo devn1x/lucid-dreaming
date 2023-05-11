@@ -1,6 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://danq5fyjew166"]
+[gd_scene load_steps=9 format=3 uid="uid://danq5fyjew166"]
 
 [ext_resource type="Theme" uid="uid://bxq3auoo5j4w0" path="res://themes/level_ui/main.tres" id="1_6402e"]
+[ext_resource type="Script" path="res://scripts/ui/level/Toolbox.gd" id="2_v2gd6"]
+[ext_resource type="Texture2D" uid="uid://yc3l6fgvlkmu" path="res://assets/textures/cursors/tools/hammer.png" id="3_jdrai"]
+[ext_resource type="Script" path="res://scripts/ui/level/Tool.gd" id="3_li3qm"]
+[ext_resource type="Texture2D" uid="uid://t5hjviinpk3" path="res://assets/textures/cursors/tools/bulldozer.png" id="5_67p1r"]
+
+[sub_resource type="Resource" id="Resource_itims"]
+script = ExtResource("3_li3qm")
+display_name = "Tool 1"
+id = "tool1"
+icon_button = ExtResource("3_jdrai")
+icon_cursor = ExtResource("3_jdrai")
+metadata/_editor_prop_ptr_cursor_icon = null
+
+[sub_resource type="Resource" id="Resource_lypyp"]
+script = ExtResource("3_li3qm")
+display_name = "Tool 2"
+id = "tool2"
+icon_button = ExtResource("5_67p1r")
+icon_cursor = ExtResource("5_67p1r")
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_akslq"]
 
 [node name="LevelUI" type="CanvasLayer"]
 
@@ -75,6 +96,7 @@ theme = ExtResource("1_6402e")
 text = "center"
 
 [node name="center right" type="Label" parent="UI"]
+visible = false
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -128,3 +150,27 @@ grow_horizontal = 0
 grow_vertical = 0
 theme = ExtResource("1_6402e")
 text = "bottom_right"
+
+[node name="Toolbox" type="VBoxContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("1_6402e")
+script = ExtResource("2_v2gd6")
+tools = Array[ExtResource("3_li3qm")]([SubResource("Resource_itims"), SubResource("Resource_lypyp")])
+
+[node name="ToolTemplate" type="Button" parent="UI/Toolbox"]
+visible = false
+layout_mode = 2
+theme = ExtResource("1_6402e")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_akslq")
+icon_alignment = 1
